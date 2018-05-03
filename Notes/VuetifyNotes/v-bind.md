@@ -20,6 +20,6 @@
 #### Vue Object
 ```javascript
 data: {
-	size: md
+	size: 'md'
 }
 ```
