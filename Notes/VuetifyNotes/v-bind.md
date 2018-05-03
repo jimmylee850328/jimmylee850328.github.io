@@ -2,15 +2,16 @@
 
 ### v-bind的用法
 
-* 方式一
+* 固定的寫法
 
 #### Html
 ```html
 <v-container fluid grid-list-md>
 ```
 
+***
 
-* 方式二
+* 動態的寫法
 
 #### Html(動態切換不同的size)
 ```html
