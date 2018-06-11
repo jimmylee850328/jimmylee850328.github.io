@@ -52,7 +52,7 @@ station_data_list = [
 
 #### station_data_list會受到stn_data的改變而改變，而stn_data會因為以下三點的改變而改變
 
-1. 不同颱風 (typhoonName)
+1. 按下颱風 (typhoonName)
 	```javascript
 	// makeTyphoonDateList() in appmenu.vue
 
