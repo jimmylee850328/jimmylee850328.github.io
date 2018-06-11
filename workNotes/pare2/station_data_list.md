@@ -60,14 +60,14 @@ station_data_list = [
 	```
 2. 氣象變數 (station_type)
 	```javascript
-	// station_type in station.vue	
+	// station_type in watch in station.vue	
 
 	if(this.startTimeStr && this.endTimeStr)
 		this.getStationData(this.startTimeStr, this.endTimeStr);
 	```
 3. 常用區域 (station_region)
 	```javascript
-	// station_region in station.vue	
+	// station_region in watch in station.vue	
 
 	if(this.startTimeStr && this.endTimeStr)
 		this.getStationData(this.startTimeStr, this.endTimeStr);
