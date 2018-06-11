@@ -50,7 +50,25 @@ station_data_list = [
 
 ---
 
-#### station_data_list 會受到以下三點的改變而改變
+#### station_data_list會受到stn_data的改變而改變，而stn_data會以下三點的改變而改變
+
 1. 不同颱風 (typhoonName)
+	```javascript
+	// makeTyphoonDateList() in appmenu.vue
+
+	this.station_get_station_data(jsonTime[0], jsonTime[jsonTime.length - 1]);
+	```
 2. 氣象變數 (station_type)
+	```javascript
+	// station_type in station.vue	
+
+	if(this.startTimeStr && this.endTimeStr)
+		this.getStationData(this.startTimeStr, this.endTimeStr);
+	```
 3. 常用區域 (station_region)
+	```javascript
+	// station_region in station.vue	
+
+	if(this.startTimeStr && this.endTimeStr)
+		this.getStationData(this.startTimeStr, this.endTimeStr);
+	```
