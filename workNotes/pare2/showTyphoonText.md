@@ -2,7 +2,7 @@
 
 1. **appmenu.vue (滑動date slider時)**
 	```javascript 
-	// typhoonDateIndex in watch call the function below
+	// typhoonDateIndex[watch] call the function below
 	
 	function tymap_show_typhoon_text() {
 		var currentIndex = this.getTyphoonDateInJsonIndex();
@@ -16,7 +16,7 @@
 	```
 2. **station.vue (station.js的stn_data更動時)**
 	```javascript 
-	// stn_data in watch
+	// stn_data[watch]
 
 	if( station_data_list && station_data_list.length > 0 &&
 	    station_data_list[0].value && station_data_list[0].value.length > 0 ) {
