@@ -42,9 +42,9 @@ station_data_list = [
 }, 
 {
 	id: "467490",
-	lat:120.6841,
-	lon:24.1457,
-	value:Array(216)
+	lat: 120.6841,
+	lon: 24.1457,
+	value: Array(216)
 }];
 ```
 
