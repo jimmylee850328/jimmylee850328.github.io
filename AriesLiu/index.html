@@ -125,7 +125,7 @@
 <script type="text/javascript">
     $(".navbar-nav a").on("click", function() {
         $(".navbar-nav").find(".active").removeClass("active");
-        $(".navbar-collapse").find(".show").removeClass("show");
+        $(".navbar-collapse.show").removeClass("show");
         $(this).parent().addClass("active");
     });
 
