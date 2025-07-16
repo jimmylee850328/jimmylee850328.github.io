@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     // Redirect to about page since that's our main content
-    router.push('/about')
-  }, [router])
+    router.push('/about');
+  }, [router]);
 
   return (
     <div>
@@ -20,5 +20,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  )
+  );
 }
