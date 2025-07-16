@@ -29,6 +29,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // GitHub Pages SPA routing fix
+  if (typeof window !== 'undefined') {
+    (function (l) {
+      if (l.search[1] === '/') {
+        const decoded = l.search
+          .slice(1)
+          .split('&')
+          .map(function (s) {
+            return s.replace(/~and~/g, '&');
+          })
+          .join('?');
+        window.history.replaceState(
+          null,
+          '',
+          l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    })(window.location);
+  }
+
   // Modern Job Title Badge Component
   const JobTitleBadge = ({
     size = 'normal',
