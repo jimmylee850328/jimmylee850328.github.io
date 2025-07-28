@@ -2,6 +2,7 @@
 
 import PageTitle from '@/components/PageTitle';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Portfolio() {
   const projects = [
@@ -9,7 +10,7 @@ export default function Portfolio() {
       id: 'infinite-scroll-gallery',
       title: 'Infinite Scroll Gallery',
       description: 'React-based infinite scroll gallery with dog images',
-      image: '/api/placeholder/400/300',
+      image: '/images/portfolio/infinite-scroll-gallery/dog.gif',
       tags: ['React', 'TypeScript', 'Next.js', 'API'],
       href: '/portfolio/infinite-scroll-gallery',
     },
@@ -36,28 +37,12 @@ export default function Portfolio() {
             {/* Project Image */}
             <Link href={project.href} className="block">
               <div className="relative aspect-video bg-gradient-to-br from-accent-dark/20 to-highlight/20 overflow-hidden group/image">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-accent-dark/30 rounded-full flex items-center justify-center mb-4 mx-auto">
-                      <svg
-                        className="w-8 h-8 text-text-primary"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-text-secondary text-sm">
-                      Project Preview
-                    </p>
-                  </div>
-                </div>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover object-top transition-transform duration-300 group-hover/image:scale-105"
+                />
 
                 {/* Hover Overlay with Eye Icon - Only on image hover */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-opacity duration-300 flex items-center justify-center">
