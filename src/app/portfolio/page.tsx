@@ -14,6 +14,15 @@ export default function Portfolio() {
       tags: ['React', 'TypeScript', 'Next.js', 'API'],
       href: '/portfolio/infinite-scroll-gallery',
     },
+    {
+      id: 'id-photo-generator',
+      title: 'ID Photo Generator',
+      description:
+        'Professional ID photo generator with printing specifications',
+      image: '/images/portfolio/id-photo-generator/preview.jpg',
+      tags: ['React', 'TypeScript', 'Canvas API', 'Image Processing'],
+      href: '/portfolio/id-photo-generator',
+    },
   ];
 
   return (
