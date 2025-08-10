@@ -10,7 +10,7 @@ export default function Portfolio() {
       id: 'infinite-scroll-gallery',
       title: 'Infinite Scroll Gallery',
       description: 'React-based infinite scroll gallery with dog images',
-      image: '/images/portfolio/infinite-scroll-gallery/dog.gif',
+      image: '/images/portfolio/infinite-scroll-gallery/preview.gif',
       tags: ['React', 'TypeScript', 'Next.js', 'API'],
       href: '/portfolio/infinite-scroll-gallery',
     },
